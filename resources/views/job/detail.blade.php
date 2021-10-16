@@ -17,8 +17,16 @@
                                     <p>{{$jobs->type}} / {{$jobs->location}}</p>
                                     <h4 class="mt-3"><strong>{!! $jobs->title !!}</strong></h4><br>
                                     <div class="row text-left pl-4 pr-4">
+                                        <img src="{{$jobs->company_logo}}" alt="">
                                         <p class="col-12 ">
                                             {!! $jobs->description !!}
+                                        </p>
+                                        <br>
+                                        <p class="col-12 ">
+                                            {!! $jobs->how_to_apply !!}
+                                        </p>
+                                        <p class="col-12">
+                                            {!! $jobs->company_url !!}
                                         </p>
                                     </div>
                                 </div>
